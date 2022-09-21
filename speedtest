@@ -1,3 +1,8 @@
 # > Speedtest by Ookla
+HOST,speed.dler.io,Speedtest
+HOST-SUFFIX,fast.com,Speedtest
+HOST-SUFFIX,ooklaserver.net,Speedtest
+HOST-SUFFIX,speed.cloudflare.com,Speedtest
+HOST-SUFFIX,speed.dler.io,Speedtest
+HOST-KEYWORD,speedtest,Speedtest
 USER-AGENT,SpeedTest*,Speedtest
-DOMAIN-KEYWORD,speedtest,Speedtest
