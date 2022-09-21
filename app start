@@ -258,10 +258,6 @@ javgg url response-body <head> response-body <head><link rel="stylesheet" href="
 ^https?:\/\/mrobot\.pconline\.com\.cn\/s\/onlineinfo\/ad\/ url reject-200
 ^https?:\/\/mrobot\.pcauto\.com\.cn\/v\d\/ad2p url reject-200
 ^https?:\/\/mrobot\.pcauto\.com\.cn\/xsp\/s\/auto\/info\/preload\.xsp url reject-200
-# > 途牛
-^https?:\/\/m\.tuniu\.com\/api\/operation\/splash\/ url reject-200
-#VideoStar Unlock（by LTribe）
-^https?:\/\/.*\.videostarapp\.com\/scripts\/subsNew\.php url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/VideoStar.js
 # >> 百度地图
 # ^https?:\/\/.+\/client\/phpui2\/ url reject-200
 ^https?:\/\/ss0\.bdstatic\.com/.+_\d{3}_\d{4}\.jpg url reject-200
@@ -394,10 +390,6 @@ javgg url response-body <head> response-body <head><link rel="stylesheet" href="
 #^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome\/ url reject-
 # > e代驾
 ^https?:\/\/pic\.edaijia\.cn\/adsplash\/ url reject-200
-# Pillow (By @CheeryTodo)
-https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/pillow.js
-# F
-# P
 # > 票根
 ^https?:\/\/pss\.txffp\.com\/piaogen\/images\/launchScreen/ url reject-200
 # > 拼多多
@@ -475,8 +467,6 @@ https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-b
 ^https?:\/\/m\.ibuscloud.com\/v2\/app\/getStartPage url reject-200
 # > 杭州市·市民卡
 ^https?:\/\/smkmp\.96225.com\/smkcenter\/ad/ url reject-200
-#微商助手(by @superuv)
-https:\/\/api\.lennou\.com\/user\/info url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/wszs.js
 #  咸鱼
 ^https:\/\/gw.alicdn.com\/mt\/ url reject
 ^https:\/\/gw.alicdn.com\/tfs\/.+\d{3,4}-\d{4} url reject
@@ -490,7 +480,6 @@ https:\/\/api\.lennou\.com\/user\/info url script-response-body https://raw.gith
 ^https:\/\/ggv.cmvideo.cn\/v1\/iflyad\/ url reject
 ^http:\//ggc.cmvideo.cn\/v1\/iflyad\/ url reject
 ^https:\//v.miguvideo.com\/ability\/v2\/member-info url script-response-body https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/migu/memberinfo.js
-^https:\//v.miguvideo.com\/ability\/v url script-response-body https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/migu/
 #  直播吧
 ^https:\/\/a.qiumibao.com\/activities\/config.php url reject
 ^https:\/\/.+\/allOne.php\?ad_name url reject
@@ -509,36 +498,6 @@ https:\/\/api\.lennou\.com\/user\/info url script-response-body https://raw.gith
 #下载地址：https://klicqi.xyz?p=VSG36N
 ^https:\/\/apki\.(.+)\.me url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1MTA5MTA5IiwiaXNzIjoiIiwiaWF0IjoxNjE5NzYzMDkyLCJuYmYiOjE2MTk3NjMwOTIsImV4cCI6MTc3NzQ0MzA5Mn0.aVf3m_oydsIXgZHWX-A5S5U6YWsIPgk-Xoj8UXy9MIw$2
 
-#百丽宫解锁VIP（by 公众号 iOS黑科技）
-#下载地址：https://hkj.lanzous.com/ie7zAnexo2b
-#网页版：http://1.blg579.xyz
-^http?:\/\/1\.blg\d{3}\.xyz\/api\/(video\/index\/details|user\/profile\/index|user\/Profile\/index) url script-response-body https://6678888.xyz/quantumultX/blg.js
-
-#咪哩视频（by 公众号 iOS黑科技）
-#下载地址：http://69n1.cn 
-# http://neihan4871.com
-^https:\/\/awmattack\.(.+)\.com\/(api/member/info|api/video/video/video_play) url script-response-body https://6678888.xyz/quantumultX/mlsp.js
-
-#独品社区解锁会员（by 公众号 iOS黑科技）
-#下载地址：（任意号注册不限制，不收验证码）（邀请码：K4GPHE）
-#https://wws.lanzous.com/s/seyou01 
-#https://wws.lanzous.com/s/seyou02
-^http:\/\/lfwmkj\.com\/(api\/user\/personal|api\/community\/edit) url script-response-body https://6678888.xyz/quantumultX/dpsq.js
-
-#菠萝视频解锁无限看（by 公众号 iOS黑科技）
-#下载地址：https://aff.polomv.com/af/edrJ
-^http:\/\/api\.myb6api\.(.+):8080\/api\.php\/api\/users\/getBaseInfo url script-response-body https://6678888.xyz/quantumultX/blsp.js
-
-#辣椒解锁会员去广告（by 公众号 iOS黑科技）
-#下载地址：http://v.sj6.live/?code=S48DGK
-^https:\/\/api\.zzyyhyy\.cn\/api\/(base|modulesData|reg|play) url script-response-body https://6678888.xyz/quantumultX/lajiao.js
-
-#AV波波解锁VIP无限看（by 公众号 iOS黑科技）
-#下载地址；
-#https://see-mybb-6.com/webApp/root/static/AppTabView/screen/static/OfficialShareView?code=6BILKPMKOYW
-#https://caoni-99.com/webApp/root/static/AppTabView/screen/static/OfficialShareView?code=6BILKPMKOYW
-^https:\/\/s\.(.+)\.com\/s2\/.+ url script-request-header https://6678888.xyz/quantumultX/avbb.js
-
 #LUTU解锁VIP无限看（by 公众号 iOS黑科技）
 #下载地址：
 #https://s-lutu.me
@@ -550,40 +509,8 @@ https:\/\/api\.lennou\.com\/user\/info url script-response-body https://raw.gith
 #https://tm9ji.com/share?code=7K5W8
 ^https:\/\/api\.(sumsun|klettdayeare|kjregister)\.(top|com)\/api\/vip\/newshow url reject-200
 ^https:\/\/api\.(sumsun|klettdayeare|kjregister)\.(top|com)\/api\/banner\/show url reject-200
-^https:\/\/api\.(sumsun|klettdayeare|kjregister)\.(top|com)\/api\/user\/profile\/ url script-response-body https://6678888.xyz/quantumultX/xincs.js
 
-#丝瓜解锁VIP视频无限看（by 公众号 iOS黑科技）
-#下载地址
-#https://sigua001.com?_s=KKLADF
-^http:\/\/(api-01|api)\.(sssggg666|zjooooo888)\.com:8089\/cxapi\/.+ url script-request-header https://6678888.xyz/quantumultX/sigua.js
-
-#涩里番VIP视频无限看（by 公众号 iOS黑科技）
-#下载地址
-#https://slf506.com?_s=XELGEF
-^http:\/\/api-01\.apiselifan11\.com\/cxapi\/.+ url script-request-header https://6678888.xyz/quantumultX/slfan.js
-
-#50度灰解锁VIP无限看（by 公众号 iOS黑科技）
-#下载地址
-#http://club.i50dh.net/chan/h50269/G5yU
-^http:\/\/(.+)\.fiftymvapi\.(.+):8080\/api\.php\/api\/.+ url script-request-header https://6678888.xyz/quantumultX/50duh.js
-^http:\/\/(.+)\.fiftymvapi\.(.+):8080\/api\.php\/api\/user\/userinfo url script-response-body https://6678888.xyz/quantumultX/50du.js
-^https:\/\/m3u8\.91-tv\.me\/.+ url script-response-body https://6678888.xyz/quantumultX/50duh.js
-
-
-# 汁乎视频
-# 下载地址:https://zh97.net/?pc=Z55C27H4
-^http[s]?:\/\/.+((wldfnjh)|(yieamnd)|(qkjuyet)|(pejyyah)).com\/api\/.+(/user/info|/login/guest|/play|/post/detail|ping/config).*$ url script-response-body https://raw.githubusercontent.com/zzcaron/quan-X/main/zhihushiipin0crack.js
-
-#探花解锁VIP会员（by 公众号 iOS黑科技）
-#下载地址无需注册
-#https://tanhua.app
-^https:\/\/1008610010\.laikanshu\.top\/Member\/getUserInfo url script-response-body https://6678888.xyz/quantumultX/tanhua.js
-
-# > 鱿鱼视频解锁会员
-;^https?:\/\/api\.youyu.*\/api\/account\/loginBy(Phone|Password)$ url script-response-body https://raw.githubusercontent.com/zzcaron/quan-X/main/yyspc0Crack.js
-# > 鱿鱼视频解锁会员
-^https?:\/\/api\.youyu.*\/api\/account\/loginBy(Phone|Password)$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/YYSPCrack.js
-#蜜桃解锁VIP无限看（by 公众号 iOS黑科技）
+# 蜜桃解锁VIP无限看（by 公众号 iOS黑科技）
 #下载地址
 #https://mtlebh.xyz?p=Q7HB6L
 ^https:\/\/mtapp\.(.+)\.me\/api\/.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDA5MTY0NyIsImlzcyI6IiIsImlhdCI6MTYxODU4MDc1NSwibmJmIjoxNjE4NTgwNzU1LCJleHAiOjE3NzYyNjA3NTV9.3aRoUmqev-qy2mLGN1ttY0hrBiHsQ8lKHCcAqX9ngBE$2
@@ -618,67 +545,25 @@ https:\/\/api\.lennou\.com\/user\/info url script-response-body https://raw.gith
 
 #DJ秀商店直接搜索（by 公众号 iOS黑科技）
 ^https:\/\/slb\.djshow\.cn\/api\/banzou\/ url response-body "ad_enable":\w+ response-body "ad_enable":false
-
-#葫芦娃解锁VIP无限看（by 公众号 iOS黑科技）
-#葫芦娃下载地址
-#http://share.5heocbzxjnui.space/api/open/video/share/default.html?a=uv6c9m&b=1&t=0hiyom
-#^https:\/\/stat\.liquidlink\.cn\/api\/v2\/ios\/(.+)\/stats\/events url script-response-body https://6678888.xyz/quantumultX/hlwa.js
-^https:\/\/(api-hlw|2-api)\.(.+)\.com\/api\/web\/.+ url script-request-header https://6678888.xyz/quantumultX/huluwa.js
-
-#面包和刺儿通用解锁会员（by 公众号 iOS黑科技）
-#面包和刺儿下载地址
-#https://apps.apple.com/cn/app/id1406687423
-#https://apps.apple.com/cn/app/id1546180377
-^http:\/\/wx\.voxpie\.com\/(api/fmapp_user|api/fmapp_bookinfo) url script-response-body https://6678888.xyz/quantumultX/mbfm.js
-
 #91视频解锁VIP无限看（by 公众号 iOS黑科技）
 #下载地址
 #https://app.uzlb.xyz/i-SR94P7
 #https://app.1zp8.xyz/i-SR94P7
-^https:\/\/(app|api)\.(qdjdswkj|rcljx|qishangzs|jisudaigou)\.com url request-header (\r\n)X-AUTH-TOKEN:.+(\r\n) request-header $1X-AUTH-TOKEN:eyJhbGciOiJIUzUxMiIsImlhdCI6MTYyMTk4NTkyNiwiZXhwIjoxOTM3MzQ1OTI2fQ.eyJpZCI6NDEzODUyMzN9.H57hPEuobymyLn8S55fworMnGWFATsoIv8361G160vAj6vsRONGUzF625B_r4IckGD5mXDW3e4GErz9l0M7Mqg$2
-
-#麻豆短视频解锁会员和付费（by 公众号 iOS黑科技）
-#下载地址无需注册
-#https://mdsv01.com/?pc=5e339d60-7605-4ccc-bfb9-68bf84f784b7
-^https:\/\/mda\..+\.site\/api\/(auth\/login|mine\/myHome|wallet\/query) url script-response-body https://6678888.xyz/quantumultX/mddsp.js
-^https:\/\/mda\..+\.site\/api\/operation\/video\/buy url response-body "code":\d+ response-body "code":200
-^https:\/\/mda\..+\.site\/api\/auth\/startupAdv url reject-200
-
-#通用订阅解锁（by 公众号 iOS黑科技）
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://6678888.xyz/quantumultX/sub.js
-^https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body https://6678888.xyz/quantumultX/subs.js
-
+^https:\/\/(app|api)\.(qdjdswkj|rcljx|qishangzs|jisudaigou)\.com url request-header (\r\n)X-AUTH-TOKEN:.+(\r\n) request-header $1X-AUTH-TOKEN:eyJhbGciOiJIUzUxMiIsImlhdCI6MTYyMTk4NTkyNiwiZXhwIjoxOTM3MzQ1OTI2fQ.eyJpZCI6NDEzODUyMzN9.H57hPEuobymyLn8S55fworMnGWFATsoIv8361G160vAj6vsRONGUzF625B_r4IckGD5mXDW3e4GErz9l0M7Mqg$
 #雪梨解锁VIP无限看（by 公众号 iOS黑科技）
 #下载地址
 #http://15mjk62.live/?code=Z99CVJ&channel=poster
 ^https:\/\/app\.pear--app\.com\/api\/app\/.+ url request-header (\r\n)token:.+(\r\n) request-header $1token:521d389499f111ebbf4e82d5981aa92e$2
-
-#Pear解锁会员无限看（by 公众号 iOS黑科技）
-#下载地址
-#https://www.pears.live?ivcode=DUJ7&t=20210504
-^https:\/\/(cn.youku-ca.com|bkcd\.b-cdn.net|souhu.mett.me|m.pearkin.com|www.baidu.com2.club)\/(api\/movie\/WatchMovieNew|api\/account\/IsVip|api\/account\/IndexDetail) url script-response-body https://6678888.xyz/quantumultX/pear.js
-
 #硬汉解锁VIP无限看（by 公众号 iOS黑科技）
 #下载地址（任意邮箱注册，务必注册一下，延长会员时间
 #我的界面-无限观看-中间输入邀请码：IN7719862)
 #https://in14.xyz
 ^https:\/\/(api|apid)\.(duorelie|jsjaydl|shimada-dl)\.com\/s1\/register\/uuid\/.+ url 302 https://apid.jsjaydl.com/s1/register/uuid/F0A0B7C2-88CB-492E-9C8F-DD1FDFA04526?key=82047e9d273bfcbdf537d39a34730a235f08e7b30a33806aa4b4d296373b0951&lang=CN&model=iPhone&platform=ios&version=1.0.0
 
-#蛋壳解锁VIP无限看（by 公众号 iOS黑科技）
-#下载地址
-#https://dks.shantianwuyu.com/1/3378149.html
-^https:\/\/ipa\.angtrend\.com\/.+ url script-request-header https://6678888.xyz/quantumultX/danke.js
-
 #健康解锁VIP无限看（by 公众号 iOS黑科技）
 #下载地址邀请码：JK8488151
 #https://jjkk.life
 ^https:\/\/(apit|api)\.(sbxsjw|cxlwhz)\.com\/s1\/register\/uuid\/.+ url 302 https://apit.sbxsjw.com/s1/register/uuid/94A30445-DF9D-4681-B96A-9724A804D9FA?key=59f0e3b3d654c4b0396461828ce0ee5ec7d8d17d1cf22141bd971ea25567ed63&lang=CN&model=iPhone&platform=ios&version=1.0.1
-
-#啪啪解锁视频无限看（by 公众号 iOS黑科技）
-#下载地址邀请码：PWTIHQ
-#http://uarnu.com/l1Uo0w4?icode=PWTIHQ
-^https:\/\/api\.papa\w+\.com(\/video\/api\/movie\/v2\/(play|[0-9]+)|\/uc\/user\/info|\/video\/api\/movie\/v2\/cache) url script-response-body https://6678888.xyz/quantumultX/papa.js
-^https:\/\/api\.papa\w+\.com\/live\/api\/home\/announcement\/v1\/list url reject-200
 
 #儿歌点点解锁vip(by公众号：少年歌行pro 製作，轉載請保留出處信息)
 http:\/\/gateway.ergedd.com\/dduser\/user\/center\/set url script-response-body https://raw.githubusercontent.com/sngxmini/crack/master/egdd/sngxegdd.js
@@ -722,24 +607,13 @@ http:\/\/gateway.ergedd.com\/dduser\/user\/center\/set url script-response-body 
 # > 91视频解锁会员
 ^https?:\/\/ap\w{1}\.(weilaixushi|orientlion|qdjdswkj|0954auto)\.com\/m_user\/info url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/91SPCrack.js
 ^https?:\/\/.*\/common\/splash_config url reject-200
-# 闪电下载vip (By 凉意)
-^http\:\/\/app\.flashdown365\.com\/ios\/login url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/sdxz.js
-
-# 美颜相机一次性解锁内购（by黑黑酱）
+#  美颜相机一次性解锁内购（by黑黑酱）
 ;^https:\/\/api\.meiyan\.com\/iap\/verify\.json url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/myxj.js
 # > 美颜相机(2022.01.15)
 ^https?:\/\/api\.account\.meitu\.com\/(common\/check_device_login_pwd|users\/show_current\.json) url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/MeiYanXiangJi.js
 ^https?:\/\/api\.meiyan\.com\/vip\/(user_center\.json|user_info\.json) url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/MeiYanXiangJi.js
 # Fit健身会员 （by黑黑酱）
-^https:\/\/bea\.sportq\.com\/SFitWeb\/sfit\/getUserBaseInfo url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/fit.js
-
-# 油猴转换器 (by Peng-YM)
-https:\/\/greasyfork\.org\/scripts\/.*\.user\.js url script-response-body https://raw.githubusercontent.com/Peng-YM/QuanX/master/Rewrites/GreasyFork/greasy-fork.js
-
-// 再注入 CSS 进行优化
-^https:\/\/www\.zhihu\.com\/question url script-response-body https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/betterweb/zhihux.user.js
-^https:\/\/www\.zhihu\.com\/topic url script-response-body https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/betterweb/zhihux.user.js
-
+^https:\/\/bea\.sportq\.com\/SFitWeb\/sfit\/getUserBaseInfo url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/
 // 去掉知乎跳转第三方网站的中间页面
 ^https?:\/\/link\.zhihu\.com/\?target=(https?)%3A//(.*) url 307 $1://$2
 
