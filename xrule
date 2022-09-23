@@ -4,3 +4,4 @@ http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getde
 # // - ------------------------去广告系列--------------------------------------
 # > 朋友圈广告
 http-response ^https:\/\/mp\.weixin\.qq\.com\/mp\/(getappmsgext|getappmsgad) script-path=https://raw.staticdn.net/iepngs/Script/master/weixin/ad.js,requires-body=true,tag=朋友圈广告
+hostname=mp.weixin.qq.com,trade-acs.m.taobao.com
