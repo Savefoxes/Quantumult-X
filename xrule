@@ -1,3 +1,4 @@
 # 淘宝比价Lite弹窗版
 http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=https://raw.staticdn.net/yichahucha/surge/master/tb_price_lite.js,tag=淘宝比价1 Lite(通知版)
 http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://raw.staticdn.net/yichahucha/surge/master/tb_price_lite.js,tag=淘宝比价2 Lite(通知版)
+hostname= trade-acs.m.taobao.com
