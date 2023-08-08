@@ -58,7 +58,7 @@ function toNotify() {
             timeFrame = '晚上';
         }
         let content = `【${month}月${day}日${timeFrame}】`
-        content += "\n[宜]" + _almanac["suit"].map(item => item?.desc ? `${item.name(item.desc)}` : `${item.name}`).join(" ");
+        content += "\n生活不止眼前的苟且，还有诗和远方~";
         const _almanac = await getPermanentCalendar();
         if (_almanac) {
             content += '\n【今日黄历】'
