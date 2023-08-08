@@ -1,3 +1,13 @@
+/*
+******************************
+脚本功能：摸鱼
+更新时间：2023-6-30
+使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
+转载: https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/moyu.js,
+*******************************
+
+[task_local]
+6 9 * * * https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Scripts/task/moyu.js, tag=摸鱼, img-url=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/67/04/ff/6704ff4c-b49b-de91-70ac-201c62d5296f/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png, enabled=true
 */
 const scriptName = '摸鱼来啦~';
 const $ = new Env(scriptName);
@@ -58,7 +68,7 @@ function toNotify() {
             timeFrame = '晚上';
         }
         let content = `【${month}月${day}日${timeFrame}】`
-        content += "\n生活不止眼前的苟且，还有诗和远方~";
+        content += "\n真的什么都不能改吗";
         const _almanac = await getPermanentCalendar();
         if (_almanac) {
             content += '\n【今日黄历】'
